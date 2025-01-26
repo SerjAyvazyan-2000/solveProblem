@@ -1,0 +1,257 @@
+
+:root {
+    --black: rgba(14, 14, 14, 1);
+    --light-black: rgba(0, 0, 0, 0.24);
+    --white: rgba(255, 255, 255, 1);
+    --white2: rgba(238, 238, 238, 1);
+    --gray: rgba(100, 100, 100, 1);
+
+    --white-light: rgba(255, 255, 255, 0.65);
+    --white-light2: rgba(255, 255, 255, 0.4);
+    --dark-blue: rgba(55, 42, 82, 1);
+    --tertiary: rgba(123, 1, 194, 1);
+    --white-gradient: linear-gradient(90deg, #7200B5 0%, #FFFFFF 70%);
+    --tertiary-gradient: linear-gradient(90deg, #420068 0%, #8200CD 100%);
+    --light-tertiary: rgba(167, 121, 193, 1);
+    --dark-tertiary: rgba(71, 1, 113, 1);
+    --light-black2: rgba(188, 77, 255, 0.06);
+    --light-tertiary2: rgba(131, 110, 144, 1);
+}
+
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.big-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.container {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+}
+
+
+
+.main {
+    flex: 1 1 auto;
+
+}
+
+
+.text-wrap {
+    display: block;
+}
+
+.desktop-text-wrap {
+    display: block;
+}
+
+.btn-black {
+    background: var(--black);
+    padding: 12px 28px;
+    border-radius: 50px;
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    display: block;
+    color: var(--white);
+
+}
+
+.btn-black:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #420068 0%, #8200CD 100%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 101%;
+    height: 102%;
+    left: -1px;
+    top: -0.5px;
+    z-index: -1;
+}
+
+.btn-black:hover::before {
+    opacity: 1;
+}
+
+.btn-tertiary {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 12px 28px;
+    color: var(--white);
+    border-radius: 50px;
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+
+}
+
+.btn-tertiary:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--tertiary-gradient);
+    border-radius: inherit;
+    transition: opacity 0.3s;
+    width: 101%;
+    height: 102%;
+    left: -1px;
+    top: -0.5px;
+    z-index: -1;
+}
+
+.btn-tertiary:hover {
+    background: var(--black);
+}
+
+.btn-tertiary:hover::before {
+    opacity: 0;
+}
+
+.btn-gradient-icon:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--tertiary-gradient);
+    border-radius: inherit;
+    transition: opacity 0.3s;
+    width: 101%;
+    height: 102%;
+    left: -1px;
+    top: -0.5px;
+    z-index: -1;
+}
+
+.btn-gradient-icon {
+    gap: 6px;
+    padding: 14px 58px;
+    border-radius: 46px;
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+
+}
+
+.btn-gradient-icon:hover::before {
+    opacity: 0;
+}
+
+.btn-gradient-icon:hover {
+    background: var(--black);
+}
+
+.btn-gradient-icon span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: var(--white);
+
+
+}
+
+.icon-arrowLeft {
+    font-size: 15px;
+    background: var(--white);
+}
+
+.section {
+    margin-top: 120px;
+}
+
+.block-title {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 49.4px;
+    color: var(--white);
+
+
+}
+
+.block-cnt {
+    margin-top: 80px;
+}
+
+.gradient-text {
+    background: var(--white-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.img-mobile {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .desktop-text-wrap {
+        display: inline;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .mobile-text-wrap {
+        display: block;
+    }
+
+    .section {
+        margin-top: 70px;
+    }
+
+    .block-title {
+        text-align: center;
+        font-size: 32px;
+        line-height: 28.8px;
+
+    }
+
+    .block-cnt {
+        margin-top: 34px;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+
+
+}

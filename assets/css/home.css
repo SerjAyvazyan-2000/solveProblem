@@ -1,0 +1,1444 @@
+.hero-section {
+    position: relative;
+    padding-top: 116px;
+
+}
+
+
+.hero-body {
+    background: var(--light-black);
+    backdrop-filter: blur(34px);
+    border-radius: 40px;
+    padding: 156px 15px 40px 15px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.hero-info-title {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 77px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: var(--white);
+
+
+}
+
+.hero-info-sub {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: center;
+    color: var(--white-light);
+
+}
+
+.hero-info-list {
+    gap: 90px;
+    margin-top: 105px;
+    justify-content: center;
+
+}
+
+.hero-info-line {
+    background: var(--dark-blue);
+    width: 1px;
+    height: 78px;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    color: var(--white);
+    transform: translateY(100px);
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+}
+.hero-clue-one {
+    transform: translateY(100px);
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+}
+.hero-clue-two {
+    transform: translateX(-100px);
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+
+}
+.hero-clue-tree {
+    transform: translateX(100px);
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+}
+.possibilities-block-title{
+    opacity: .9;
+}
+
+.hero-section.active .hero-title {
+    opacity: 1;
+    transform: translateX(0);
+}
+.hero-section.active .hero-clue-one {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-section.active .hero-clue-two {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hero-section.active .hero-clue-tree {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hero-sub-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: center;
+    color: var(--white-light);
+    margin-top: 24px;
+}
+
+.hero-bnt {
+    margin-top: 34px;
+}
+
+.hero-clue-item {
+    gap: 8px;
+}
+
+.hero-info-clues {
+    gap: 30px;
+    position: absolute;
+    top: 32px;
+    right: 42px;
+}
+
+.hero-clue-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: var(--white);
+
+
+}
+
+.hero-icon {
+    font-size: 20px;
+    background: var(--tertiary);
+}
+
+.hero-decor {
+    position: absolute;
+}
+
+.hero-decor--one {
+    right: 0;
+    top: 0;
+}
+
+.hero-decor--two {
+    left: 0;
+    bottom: 0;
+}
+
+.possibilities-section {
+    position: relative;
+}
+
+.possibilities-section::after {
+    content: "";
+    position: absolute;
+    top: -399px;
+    /* bottom: 0; */
+    left: 100px;
+    width: 120%;
+    height: 160%;
+    background-image: url('../images/possibilitiesDecor.webp');
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.possibilities-body {
+    position: relative;
+    z-index: 3;
+}
+
+.possibilities-items {
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.possibilities-item {
+    flex: 1 1 31.8%;
+    width: 100%;
+    background: var(--light-black);
+    border-radius: 20px;
+    backdrop-filter: blur(34px);
+    padding: 28px 16px 18px 28px;
+    min-height: 365px;
+    display: flex;
+    flex-direction: column;
+    max-height: max-content;
+
+}
+
+.possibilities-heading {
+    margin-top: 43px;
+    flex: 1 1 auto;
+    padding-bottom: 10px;
+}
+
+.possibilities-sub-titles {
+    margin-top: 16px;
+}
+
+.possibilities-icon {
+    max-width: 100px;
+    width: 100%;
+}
+
+
+.possibilities-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: var(--white);
+
+}
+
+.possibilities-sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: var(--white-light);
+    margin-left: 20px;
+    position: relative;
+
+}
+
+.possibilities-sub-title::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--white-light);
+    position: absolute;
+    left: -15px;
+    top: 7px;
+}
+
+.find-more p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: var(--light-tertiary);
+
+}
+
+.find-more {
+    gap: 6px;
+    justify-content: flex-end;
+}
+
+.icon-arrowUp {
+    font-size: 14px;
+    background: var(--light-tertiary);
+}
+
+.possibilities-item--two {
+    margin-top: 110px;
+}
+
+.possibilities-item--tree {
+    margin-top: 220px;
+
+}
+
+.possibilities-item--for {
+    margin-top: -210px;
+}
+
+.possibilities-item--five {
+    margin-top: -110px;
+
+}
+
+.services-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.services-item {
+    flex: 1 1 49%;
+    border-radius: 20px;
+    background: var(--dark-tertiary);
+    padding: 34px;
+    align-items: center;
+    gap: 10px;
+}
+
+.services-item-heading {
+    max-width: 340px;
+}
+
+.services-item-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: var(--white);
+}
+
+.services-item-sub {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    margin-top: 16px;
+    color: var(--white);
+    opacity: .7;
+
+
+}
+
+.services-item-icon {
+    flex: 0 0 86px;
+    height: 86px;
+    background: var(--black);
+    border-radius: 50%;
+}
+
+.services-icon {
+    font-size: 40px;
+    background: var(--white);
+    flex: 0 0 30px;
+}
+
+.icon-verified {
+    font-size: 45px;
+    background: var(--white);
+}
+
+.icon-peoples {
+    font-size: 45px;
+    background: var(--white);
+}
+
+.icon-time {
+    font-size: 45px;
+    background: var(--white);
+}
+
+.icon-pencil {
+    font-size: 45px;
+    background: var(--white);
+}
+
+.possibilities-decor {
+    position: absolute;
+}
+
+.possibilities-decor-two {
+    right: 0;
+    top: 20px;
+}
+
+.possibilities-decor-one {
+    left: 210px;
+    bottom: 47px;
+    z-index: -1;
+}
+
+.how-works-body {
+    position: relative;
+    z-index: 2;
+}
+
+.how-works-section {
+    position: relative;
+}
+
+.how-works-blur {
+    position: absolute;
+    z-index: -1;
+}
+
+.works-blur--one {
+    left: 0;
+    bottom: 0;
+}
+
+.works-blur--two {
+    left: 0;
+    top: 0;
+}
+
+.works-blur--tree {
+    right: 0;
+    bottom: 100px;
+}
+
+.how-works-items {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.how-works-item {
+    flex: 1 1 32%;
+    border: 2px solid var(--white-light2);
+    backdrop-filter: blur(34px);
+    border-radius: 20px;
+
+}
+
+.works-item-tools {
+    flex: 1 1 32%;
+
+}
+
+.works-item-heading {
+    padding: 24px 22px;
+    background: var(--light-black);
+    backdrop-filter: blur(34px);
+    border-radius: 20px;
+
+}
+
+.works-item-number {
+    width: 42px;
+    height: 42px;
+    background: var(--dark-tertiary);
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 25.2px;
+    color: var(--white);
+
+}
+
+.works-item-text {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: center;
+    margin-top: 30px;
+    color: var(--white);
+
+
+}
+
+.works-item-descr {
+    padding: 52px 54px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: var(--white-light);
+    text-align: center;
+
+
+}
+
+.works-tools-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: var(--white-light);
+    text-align: center;
+    padding: 52px 54px 0 54px;
+
+}
+
+.works-item-bnt {
+    margin-top: 40px;
+}
+
+.problem-solving-section {
+    position: relative;
+
+}
+
+.problem-solving-body {
+    padding: 80px;
+    background: var(--light-black2);
+    backdrop-filter: blur(34px);
+    border-radius: 40px;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.problem-solving-title {
+    text-align: center;
+}
+
+.solving-items {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.solving-item {
+    background: var(--black);
+    border-radius: 20px;
+    padding: 32px;
+    gap: 27px;
+    flex: 1 1 48.7%;
+    justify-content: space-between;
+}
+
+.solving-item-texts {
+    max-width: 231px;
+}
+
+.solving-item-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: center;
+    color: var(--white);
+}
+
+.solving-item-sub {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: var(--white-light);
+    margin-top: 16px;
+
+}
+
+.solving-item-media {
+    max-width: 191px;
+    height: 210px;
+    width: 100%;
+}
+
+.solving-item-media img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.solving-star {
+    position: absolute;
+}
+
+
+.solving-star--one {
+    right: -20px;
+    top: -100px;
+
+}
+
+.solving-star--two {
+    top: 400px;
+    left: 50px;
+}
+
+.reviews-title {
+    text-align: center;
+}
+
+
+.reviews-buttons {
+    gap: 16px;
+    margin-top: 40px;
+
+}
+
+.icon-arrow {
+    font-size: 20px;
+    background: var(--white);
+    position: relative;
+    z-index: 4;
+}
+
+.reviews-section {
+    position: relative;
+}
+
+.reviews-body {
+    position: relative;
+    z-index: 2;
+}
+
+.reviews-bur {
+    position: absolute;
+}
+
+.reviews-blur--one {
+    left: 0;
+    bottom: -200px;
+}
+
+.reviews-blur--two {
+    bottom: -450px;
+    right: 0;
+    z-index: 1;
+
+}
+
+.reviews-blur--tree {
+    bottom: -400px;
+    right: 0;
+    z-index: 1;
+}
+
+.reviews-button {
+    position: relative !important;
+    background: var(--dark-tertiary);
+    padding: 19px 30px;
+    margin-top: 0 !important;
+    border-radius: 40px;
+    width: unset !important;
+    height: unset !important;
+    transition: .3s;
+
+}
+
+.reviews-button:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #420068 0%, #8200CD 100%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 101%;
+    height: 102%;
+    left: -1px;
+    top: -0.5px;
+    z-index: -1;
+
+}
+
+.reviews-button:hover::before {
+    opacity: 1;
+
+
+}
+
+.reviews-button:hover {
+    background: none;
+}
+
+.reviews-button::after {
+    display: none !important;
+}
+
+.reviews-button-prev {
+    transform: rotate(180deg);
+}
+
+.reviews-stars {
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.icon-star {
+    font-size: 30px;
+    background: var(--white);
+}
+
+.reviews-item {
+    background: var(--light-black);
+    backdrop-filter: blur(34px);
+    padding: 24px 32px 40px 40px;
+    min-height: 419px;
+    max-width: 384px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.reviews-author-img {
+    max-width: 60px;
+    height: 60px;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.reviews-author-img img {
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews-author {
+    margin-top: 20px;
+    flex: 1 1 auto;
+}
+
+.reviews-author-name {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: var(--white);
+
+}
+
+.reviews-author-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: var(--white2);
+    margin-top: 26px;
+}
+
+.reviews-data {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    letter-spacing: -0.01em;
+    color: var(--gray);
+
+}
+
+.faq-section {
+    position: relative;
+}
+
+.faq-star {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.faq-items {
+    max-width: 894px;
+    width: 100%;
+    gap: 8px;
+}
+
+.faq-item {
+    border: 1px solid var(--light-tertiary2);
+    padding: 37px 24px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.faq-item-header {
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-item-header p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 19.8px;
+    color: var(--white);
+
+}
+
+.faq-item-icon {
+    flex: 0 0 28px;
+    height: 28px;
+    position: relative;
+    transition: .3s;
+
+}
+
+.faq-item-icon::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 28px;
+    background: var(--white-light2);
+    transition: .3s;
+
+
+}
+
+.faq-item-icon::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 28px;
+    background: var(--white-light2);
+    transform: rotate(90deg);
+    transition: .3s;
+
+}
+
+.faq-body {
+    position: relative;
+    z-index: 2;
+    gap: 20px;
+}
+
+.faq-item.active .faq-item-icon::after {
+    transform: rotate(-135deg);
+    transition: .3s;
+}
+
+.faq-item.active .faq-item-icon::before {
+    transform: rotate(135deg);
+    transition: .3s;
+
+}
+
+.faq-item.active .faq-item-sub {
+    max-height: 500px;
+    opacity: .7;
+    visibility: visible;
+    transition: .3s;
+    margin-top: 24px;
+
+
+}
+
+.faq-item-sub {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    transition: .3s;
+    color: var(--white);
+    opacity: 0;
+    visibility: hidden;
+    max-width: 528px;
+    max-height: 0;
+
+}
+
+.join-us-body {
+    border-radius: 40px;
+    backdrop-filter: blur(34px);
+    padding: 100px 102px;
+    align-items: center;
+    gap: 105px;
+    min-height: 707px;
+    width: 100%;
+    background-image: url('../images/joinUsFon.webp');
+
+
+}
+
+.join-us-heading {
+    max-width: 384px;
+}
+
+.join-us-sub {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    color: var(--white-light);
+}
+
+.join-us-bnt {
+    margin-top: 44px;
+}
+
+.join-us-line {
+    background: var(--dark-blue);
+    width: 1px;
+    height: 294px;
+
+}
+
+.join-info-items {
+    flex-wrap: wrap;
+    gap: 44px;
+    max-width: 379px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-info-one {
+    width: 100%;
+}
+
+.join-info-line {
+    background: var(--white-light2);
+    width: 1px;
+    height: 129px;
+}
+
+.join-line-two {
+    background: var(--white-light2);
+    width: 345px;
+    height: 1px;
+}
+
+.possibilities-mobile-blur {
+    display: none;
+}
+
+.services-items-slider {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .possibilities-item--two {
+        margin-top: 0;
+    }
+
+    .join-us-body {
+        border-radius: 40px;
+        padding: 60px 40px;
+        min-height: 707px;
+        gap: 30px;
+
+
+    }
+
+    .possibilities-item--tree {
+        margin-top: 0;
+
+    }
+
+    .possibilities-item--for {
+        margin-top: 0;
+    }
+
+    .possibilities-item--five {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .hero-info-list {
+        gap: 20px;
+
+    }
+
+    .join-us-body {
+        flex-direction: column;
+    }
+
+    .join-us-title {
+        text-align: center;
+    }
+
+    .join-us-line {
+        display: none;
+    }
+
+    .join-us-sub {
+        text-align: center;
+    }
+    .join-us-bnt{
+        margin: 40px auto 0 ;
+    }
+
+    .possibilities-section::after {
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-info-list {
+        gap: 10px;
+
+    }
+
+    .faq-star {
+        position: absolute;
+        left: unset;
+        top: -120px;
+        right: 0;
+        transform: rotate(180deg);
+        z-index: 2;
+        max-width: 152px;
+    }
+
+    .faq-body {
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    .solving-item {
+        flex-direction: column;
+    }
+
+    .solving-item-media {
+        max-width: 100%;
+    }
+
+    .how-works-item {
+        flex: 1 1 100%;
+    }
+
+    .services-items-slider {
+        display: block;
+    }
+
+    .services-items {
+        display: none;
+    }
+
+    .possibilities-item {
+        flex: 1 1 100%;
+        padding: 20px 16px 16px 20px;
+        min-height: 283px;
+
+
+    }
+
+    .services-item-icon {
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero-info-title {
+        font-size: 35px;
+    }
+
+    .services-icon {
+        flex: 0 0 14px;
+        font-size: 22px;
+    }
+
+    .icon-verified {
+        font-size: 20px;
+    }
+
+    .icon-pencil {
+        font-size: 20px;
+
+    }
+
+    .icon-time {
+        font-size: 20px;
+
+    }
+
+    .icon-peoples {
+        font-size: 25px;
+
+    }
+
+    .problem-solving-body {
+        padding: 40px 12px;
+        border-radius: 24px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding-top: 92px;
+
+    }
+    .join-info-line{
+        display: none;
+    }
+    .join-info-one{
+        width: max-content;
+        order: 3;
+    }
+    .join-line-two{
+        display: none;
+    }
+    .join-us-body{
+        padding: 40px 16px;
+        border-radius: 24px;
+        background-image: url('../images/joinUsFonMobile.webp');
+        min-height: 450px;
+    }
+    .join-info-item:nth-child(3){
+        order: 1;
+    }
+    .join-info-item:nth-child(5){
+        order: 3;
+    }
+    .join-info-items{
+        gap: 22px;
+    }
+    .join-us-sub{
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+    .faq-star {
+        top: -50px;
+        transform: unset;
+        z-index: 1;
+    }
+
+    .faq-item {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+
+    .faq-item-header p {
+        font-size: 16px;
+        line-height: 19.2px;
+
+    }
+
+    .works-item-number {
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+
+    }
+
+    .solving-item {
+        background: var(--black);
+        padding: 20px;
+        gap: 32px;
+    }
+
+    .solving-item-media img {
+        border-radius: 8px;
+    }
+
+    .solving-item-title {
+        font-size: 20px;
+        line-height: 18px;
+
+    }
+
+    .solving-star--one {
+        right: 0;
+        top: -90px;
+    }
+
+    .solving-star--two {
+        top: unset;
+        left: 0;
+        bottom: -30px;
+    }
+
+    .solving-item-sub {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .solving-item-media {
+        height: 118px;
+    }
+
+    .works-item-text {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 18px;
+
+    }
+
+    .faq-item-icon {
+        flex: 0 0 20px;
+        height: 20px;
+
+
+    }
+
+
+    .reviews-item {
+        max-width: 100%;
+        padding: 16px 31px 20px 20px;
+        min-height: 319px;
+    }
+
+    .faq-item-icon::after {
+        width: 1px;
+        height: 20px;
+    }
+
+    .faq-item-icon::before {
+        width: 1px;
+        height: 20px;
+
+    }
+
+    .faq-item-sub {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .faq-item.active .faq-item-sub {
+        margin-top: 14px;
+    }
+
+    .icon-star {
+        font-size: 22px;
+    }
+
+    .works-item-descr {
+        padding: 24px 53px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: center;
+
+    }
+
+    .how-works-items {
+        gap: 4px;
+    }
+
+    .reviews-author-name {
+        font-size: 20px;
+        line-height: 18px;
+
+    }
+
+    .reviews-author-text {
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+    }
+
+    .hero-info-title {
+        font-size: 28px;
+        line-height: 30.8px;
+        letter-spacing: -0.05em;
+
+    }
+
+    .reviews-author-img {
+        max-width: 30px;
+        height: 30px;
+        margin-top: 32px;
+    }
+
+    .reviews-author {
+        margin-top: 24px;
+    }
+
+    .possibilities-section::after {
+        top: -400px;
+        bottom: unset;
+        left: 0;
+        width: 120%;
+        height: 100%;
+
+    }
+
+    .possibilities-icon {
+        max-width: 66px;
+        height: 66px;
+    }
+
+    .hero-info-list {
+        gap: 22px;
+
+    }
+
+    .possibilities-title {
+        font-size: 20px;
+        line-height: 18px;
+    }
+
+    .possibilities-sub-title {
+        font-size: 14px;
+        line-height: 16.8px;
+
+    }
+
+    .possibilities-heading {
+        margin-top: 36px;
+    }
+
+    .possibilities-items {
+        gap: 4px;
+    }
+
+    .hero-info-item:nth-child(3) {
+        order: 3;
+    }
+
+    .possibilities-mobile-blur {
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+
+    .possibilities-mobile-blur img {
+        width: 100%;
+    }
+
+
+    .works-blur--tree {
+        bottom: -200px;
+    }
+
+    .possibilities-blur--one {
+        top: 200px;
+        left: 0;
+    }
+
+    .works-blur--one {
+        bottom: 250px;
+    }
+
+    .works-blur--two {
+        top: -240px;
+    }
+
+    .reviews-buttons {
+        margin-top: 24px;
+        gap: 0;
+    }
+
+    .possibilities-blur--two {
+        bottom: 0;
+        left: 0;
+    }
+
+    .reviews-button {
+        padding: 12px 22px;
+        border-radius: 46px;
+    }
+
+    .icon-arrow {
+        font-size: 16px;
+    }
+
+    .possibilities-blur--two {
+        bottom: -500px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .hero-info-sub {
+        font-size: 12px;
+        line-height: 13.2px;
+        letter-spacing: -0.01em;
+
+    }
+
+    .possibilities-decor-two {
+        top: 30px;
+    }
+
+    .reviews-blur--one {
+        display: none;
+    }
+
+    .reviews-blur--two {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 33px;
+        line-height: 33px;
+    }
+
+    .reviews-blur--tree {
+        bottom: -500px;
+        right: unset;
+        width: 100%;
+        z-index: -1;
+        left: 0;
+        top: unset;
+    }
+
+    .reviews-blur--tree img {
+        width: 100%;
+    }
+
+    .possibilities-decor-one {
+        left: -20px;
+        bottom: -40px;
+    }
+
+    .hero-sub-title {
+        font-size: 14px;
+        line-height: 16.8px;
+        margin-top: 16px;
+    }
+
+    .hero-info-icon {
+        max-width: 20px;
+    }
+
+    .hero-bnt {
+        margin-top: 40px;
+    }
+
+    .hero-body {
+        padding: 120px 16px 20px 16px;
+        border-radius: 24px;
+
+    }
+
+    .hero-info-line {
+        display: none;
+    }
+
+    .hero-info-clues {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .works-tools-text {
+        font-size: 14px;
+        line-height: 16.8px;
+        padding: 44px 54px 0 54px;
+    }
+
+    .works-item-bnt {
+        margin-top: 24px;
+    }
+
+    .hero-clue-item {
+        flex-direction: row-reverse;
+    }
+
+    .hero-icon {
+        font-size: 16px;
+    }
+
+    .hero-clue-item p {
+        font-size: 12px;
+        line-height: 13.2px;
+        letter-spacing: -0.01em;
+    }
+
+    .hero-decor--two {
+        left: 0;
+        bottom: -90px;
+    }
+
+    .services-item {
+        padding: 20px;
+        gap: 36px;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .services-item-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 18px;
+
+    }
+
+    .services-item-sub {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+
+    }
+
+}
+
