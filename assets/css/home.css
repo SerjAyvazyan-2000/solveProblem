@@ -1112,7 +1112,12 @@
         line-height: 18px;
 
     }
-
+    .how-works-blur{
+        width: 100%;
+    }
+    .how-works-blur img{
+        width: 100%;
+    }
     .solving-star--one {
         right: 0;
         top: -90px;
