@@ -409,7 +409,6 @@
 .works-item-heading {
     padding: 24px 22px;
     background: var(--light-black);
-    backdrop-filter: blur(34px);
     border-radius: 20px;
 
 }
